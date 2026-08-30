@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramba — Find work anywhere East Africa is hiring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">Ramba<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#demo">Demo</a>
+      <a href="#how">How it works</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#register" class="nav-cta">Register</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">AI job matching · Kenya · Uganda · Tanzania · Rwanda · Ethiopia</p>
+      <h1>Find work anywhere<br>East Africa is hiring.</h1>
+      <p class="hero-sub">Tell Ramba what you do. It reads thousands of listings across the region and hands you the ones actually worth applying to — in seconds, not weeks of scrolling.</p>
+      <div class="hero-actions">
+        <a href="#demo" class="btn btn-primary">Try the live demo</a>
+        <a href="#register" class="btn btn-ghost">Create free account</a>
+      </div>
+      <p class="hero-note">No CV required to try it. No account required to see how it works.</p>
+    </div>
+  </section>
+
+  <!-- LIVE DEMO -->
+  <section class="demo" id="demo">
+    <div class="section-head">
+      <p class="eyebrow">01 — See it work first</p>
+      <h2>Type what you do. Watch Ramba match you.</h2>
+      <p class="section-sub">This is the same matching engine that runs on the real site — try a skill, a job title, or an industry.</p>
+    </div>
+
+    <div class="demo-panel">
+      <div class="demo-input-row">
+        <span class="prompt-mark">&gt;</span>
+        <input id="demo-input" type="text" placeholder="e.g. sql, nursing, sales, logistics..." autocomplete="off">
+        <button id="demo-btn" class="btn btn-primary btn-small">Find matches</button>
+      </div>
+      <div class="demo-suggestions">
+        <span>Try:</span>
+        <button class="chip" data-chip="sql">sql</button>
+        <button class="chip" data-chip="sales">sales</button>
+        <button class="chip" data-chip="design">design</button>
+        <button class="chip" data-chip="nursing">nursing</button>
+        <button class="chip" data-chip="logistics">logistics</button>
+      </div>
+
+      <div id="demo-results" class="demo-results">
+        <div class="demo-empty">
+          <p>Results will appear here — type a skill above and hit <strong>Find matches</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="section-head">
+      <p class="eyebrow">02 — The process</p>
+      <h2>Three steps. No middlemen.</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-card">
+        <span class="how-mark">01</span>
+        <h3>Tell Ramba what you do</h3>
+        <p>A few skills, your last title, or just what you're hoping to do next. No lengthy forms.</p>
+      </div>
+      <div class="how-card">
+        <span class="how-mark">02</span>
+        <h3>Get matched across the region</h3>
+        <p>Ramba scores every open listing in East Africa against what you told it and ranks the real fits first.</p>
+      </div>
+      <div class="how-card">
+        <span class="how-mark">03</span>
+        <h3>Apply straight to the employer</h3>
+        <p>Every match links directly to the company. No recruiter fees, no forwarding your details around.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE / SIGNATURE MAP -->
+  <section class="coverage" id="coverage">
+    <div class="section-head">
+      <p class="eyebrow">03 — Where Ramba looks</p>
+      <h2>One search, seven countries.</h2>
+      <p class="section-sub">Jobs move across borders in East Africa more than most sites admit. Ramba tracks listings city to city, not country by country.</p>
+    </div>
+    <div class="map-wrap">
+      <svg id="route-map" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of job listing activity connecting Nairobi, Kampala, Kigali, Dar es Salaam, Addis Ababa, Juba and Mogadishu">
+        <!-- routes drawn by JS -->
+      </svg>
+    </div>
+    <p class="map-caption">Live listing volume, illustrative — updates as employers post.</p>
+  </section>
+
+  <!-- REGISTER -->
+  <section class="register" id="register">
+    <div class="section-head">
+      <p class="eyebrow">04 — Get in</p>
+      <h2>Create your free account</h2>
+      <p class="section-sub">Save your matches, get alerted the moment a fit opens, and apply in one tap.</p>
+    </div>
+
+    <form id="register-form" class="register-form" novalidate>
+      <div class="field">
+        <label for="full-name">Full name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Aisha Mwangi" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="field">
+        <label for="country">Where are you based?</label>
+        <select id="country" name="country" required>
+          <option value="" disabled selected>Select a country</option>
+          <option>Kenya</option>
+          <option>Uganda</option>
+          <option>Tanzania</option>
+          <option>Rwanda</option>
+          <option>Ethiopia</option>
+          <option>South Sudan</option>
+          <option>Somalia</option>
+          <option>Burundi</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>I'm here to</label>
+        <div class="radio-row">
+          <label class="radio-pill"><input type="radio" name="intent" value="find-work" checked> Find work</label>
+          <label class="radio-pill"><input type="radio" name="intent" value="hire"> Hire people</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Create free account</button>
+      <p class="form-note">This demo doesn't send data anywhere yet — it's a working front end waiting on a backend.</p>
+    </form>
+
+    <div id="register-success" class="register-success" hidden>
+      <p class="success-mark">✓</p>
+      <h3>You're on the list</h3>
+      <p>This is where a real signup would hand off to your backend. Wire this form up to start collecting real accounts.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Ramba — built for East Africa's job market.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
